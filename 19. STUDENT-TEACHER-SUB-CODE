@@ -1,5 +1,20 @@
-takes(prasoona, his201).
-takes(prasoona, cs245).
-takes(rishitha, art302).
-takes(rishitha, cs254).
-classmates(X, Y) :- takes(X, Z), takes(Y, Z).
+teacher(john, math).
+teacher(lisa, physics).
+teacher(alex, chemistry).
+teacher(sarah, computer_science).
+
+% Facts about students
+student(james, math).
+student(emily, physics).
+student(oliver, chemistry).
+student(sophia, computer_science).
+student(emma, math).
+student(liam, physics).
+
+% Rules to determine which students are taught by a teacher for a subject
+teaches(Teacher, Subject) :-
+    teacher(Teacher, Subject).
+
+% Rules to determine which students are enrolled in a subject
+enrolled(Student, Subject) :-
+    student(Student, Subject).
