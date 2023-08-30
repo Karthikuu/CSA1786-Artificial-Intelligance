@@ -1,7 +1,4 @@
 import heapq
-print("A.JASWANTHI")
-print("192111382")
-print("A* algorithm")
 def a_star(grid, start, goal):
     open_set, closed_set = [], set()
     heapq.heappush(open_set, (0, start, None))
