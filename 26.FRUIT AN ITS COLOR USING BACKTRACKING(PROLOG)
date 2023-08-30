@@ -1,6 +1,7 @@
-colour(cherry, red).
-colour(banana, yellow).
-colour(apple, red).
-colour(apple, green).
-colour(orange, orange).
-colour(x, unknown).
+fruit_color(apple, red).
+fruit_color(banana, yellow).
+fruit_color(grape, purple).
+fruit_color(orange, orange).
+
+color_of(Fruit, Color) :-
+    fruit_color(Fruit, Color).
