@@ -1,16 +1,9 @@
-bird(swan).
-bird(sparrow).
-bird(eagle).
-bird(duck).
-bird(crow).
-bird(ostrich).
-bird(puffin).
-bird(swan).
-bird(albatross).
-bird(starling).
-bird(owl).
-bird(kingfisher).
-bird(thrush).
+bird(canary, can_fly).
+bird(ostrich, cannot_fly).
+bird(penguin, cannot_fly).
+bird(sparrow, can_fly).
 
-
-can_fly(X):- bird(X).
+can_fly(Bird) :-
+    bird(Bird,can_fly).
+cannot_fly(Bird) :-
+    bird(Bird,cannot_fly).
